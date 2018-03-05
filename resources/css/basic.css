@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+/**
+ * ! Bstones template v0.1
+ * @comment     customize v0.1
+ * @author      MCShin
+ * @Write		    2016-03-04
+ * @Modify		  2016-03-15
+ * @Modify      2017-02-14 (ARShin : 헬퍼클래스 추가, 태그와 관련된 것은 reset.css로 이동)
+ */
+
+/* ==========================================================================
+   헬퍼 클래스
+   ========================================================================== */
+
+.show {display:block !important;}
+
+/* 스크린리더와 브라우저에서 모두 숨김처리 */
+.hidden {display:none !important; visibility:hidden !important;}
+
+.invisible {visibility:hidden;}
+
+/* 스크린리더에서만 보이도록 숨김처리 */
+.visuallyhidden {overflow:hidden; position:absolute; width:1px; height:1px; padding:0; border:0; margin:-1px; clip:rect(0 0 0 0);}
+
+/* `.visuallyhidden` 클래스가 키보드로 접근 가능하도록 */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {overflow:visible; position:static; width:auto; height:auto; margin:0; clip:auto;}
+
+/** 
+ * IR 기법
+ * 1. Phark Method (PM) : 이미지로 대체할 요소에 배경 이미지를 설정하고, 글자는 `text-indent` 를 이용해 화면 바깥으로 빼내는 기법. CSS on / image off 시 텍스트가 안보인다는 단점이 있음
+ * 2. WA IR : 이미지로 대체할 요소에 배경 이미지를 설정하고, 글자는 `span` 태그로 감싼후 `z-index:-1` 을 이용해 화면에 안보이게 처리
+ * -> 위 두가지 IR 기법들은 웹 접근성에 위배되므로 권장하지 않음 
+ */ 
+.ir-pm {display:block; text-indent:-9999px;}
+.ir-wa {display:block; position:relative; z-index:-1;}
+
+/* 웹 접근성 대응에 필요한 요소들 보이지 않도록 할때 */
+.blind {overflow:hidden; display:block; position:absolute; top:0; left:-1000em;}
+
+/* float 정렬 */
+.pull-right {float:right !important;}
+.pull-left {float:left !important;}
+
+/* float 해제 */
+.clearfix {*zoom:1;}
+.clearfix:before, .clearfix:after {display:table; content:'';}
+.clearfix:after {clear:both;}
+.over-hidden {overflow:hidden;}
+
+/* 블록 중앙정렬 */
+.block-center {display:block; margin-right:auto; margin-left:auto;}
+
+/* 텍스트 정렬 */
+.text-left {text-align:left !important;}
+.text-center {text-align:center !important;}
+.text-right {text-align:right !important;}
+
+/* 텍스트 줄임 */
+.text-overflow {overflow:hidden; display:block; text-overflow:ellipsis; white-space:nowrap;}
+
+/* padding-top */
+.pt-0 {padding-top:0 !important;}
+.pt-10 {padding-top:10px !important;}
+.pt-15 {padding-top:15px !important;}
+.pt-20 {padding-top:20px !important;}
+.pt-25 {padding-top:25px !important;}
+.pt-30 {padding-top:30px !important;}
+.pt-35 {padding-top:35px !important;}
+.pt-40 {padding-top:40px !important;}
+.pt-45 {padding-top:45px !important;}
+.pt-50 {padding-top:50px !important;}
+.pt-60 {padding-top:60px !important;}
+.pt-70 {padding-top:70px !important;}
+.pt-80 {padding-top:80px !important;}
+.pt-90 {padding-top:90px !important;}
+.pt-100 {padding-top:100px !important;}
+/* padding-right */
+.pr-0 {padding-right:0 !important;}
+.pr-10 {padding-right:10px !important;}
+.pr-15 {padding-right:15px !important;}
+.pr-20 {padding-right:20px !important;}
+.pr-25 {padding-right:25px !important;}
+.pr-30 {padding-right:30px !important;}
+.pr-35 {padding-right:35px !important;}
+.pr-40 {padding-right:40px !important;}
+.pr-45 {padding-right:45px !important;}
+.pr-50 {padding-right:50px !important;}
+.pr-60 {padding-right:60px !important;}
+.pr-70 {padding-right:70px !important;}
+.pr-80 {padding-right:80px !important;}
+.pr-90 {padding-right:90px !important;}
+.pr-100 {padding-right:100px !important;}
+/* padding-bottom */
+.pb-0 {padding-bottom:0 !important;}
+.pb-10 {padding-bottom:10px !important;}
+.pb-15 {padding-bottom:15px !important;}
+.pb-20 {padding-bottom:20px !important;}
+.pb-25 {padding-bottom:25px !important;}
+.pb-30 {padding-bottom:30px !important;}
+.pb-35 {padding-bottom:35px !important;}
+.pb-40 {padding-bottom:40px !important;}
+.pb-45 {padding-bottom:45px !important;}
+.pb-50 {padding-bottom:50px !important;}
+.pb-60 {padding-bottom:60px !important;}
+.pb-70 {padding-bottom:70px !important;}
+.pb-80 {padding-bottom:80px !important;}
+.pb-90 {padding-bottom:90px !important;}
+.pb-100 {padding-bottom:100px !important;}
+/* padding-left */
+.pl-0 {padding-left:0 !important;}
+.pl-10 {padding-left:10px !important;}
+.pl-15 {padding-left:15px !important;}
+.pl-20 {padding-left:20px !important;}
+.pl-25 {padding-left:25px !important;}
+.pl-30 {padding-left:30px !important;}
+.pl-35 {padding-left:35px !important;}
+.pl-40 {padding-left:40px !important;}
+.pl-45 {padding-left:45px !important;}
+.pl-50 {padding-left:50px !important;}
+.pl-60 {padding-left:60px !important;}
+.pl-70 {padding-left:70px !important;}
+.pl-80 {padding-left:80px !important;}
+.pl-90 {padding-left:90px !important;}
+.pl-100 {padding-left:100px !important;}
+
+/* border:0 */
+.bt-none {border-top:none !important;}
+.br-none {border-right:none !important;}
+.bb-none {border-bottom:none !important;}
+.bl-none {border-left:none !important;}
+
+/* margin-top */
+.mt-0 {margin-top:0 !important;}
+.mt-10 {margin-top:10px !important;}
+.mt-15 {margin-top:15px !important;}
+.mt-20 {margin-top:20px !important;}
+.mt-25 {margin-top:25px !important;}
+.mt-30 {margin-top:30px !important;}
+.mt-35 {margin-top:35px !important;}
+.mt-40 {margin-top:40px !important;}
+.mt-45 {margin-top:45px !important;}
+.mt-50 {margin-top:50px !important;}
+.mt-60 {margin-top:60px !important;}
+.mt-70 {margin-top:70px !important;}
+.mt-80 {margin-top:80px !important;}
+.mt-90 {margin-top:90px !important;}
+.mt-100 {margin-top:100px !important;}
+/* margin-right */
+.mr-0 {margin-right:0 !important;}
+.mr-10 {margin-right:10px !important;}
+.mr-15 {margin-right:15px !important;}
+.mr-20 {margin-right:20px !important;}
+.mr-25 {margin-right:25px !important;}
+.mr-30 {margin-right:30px !important;}
+.mr-35 {margin-right:35px !important;}
+.mr-40 {margin-right:40px !important;}
+.mr-45 {margin-right:45px !important;}
+.mr-50 {margin-right:50px !important;}
+.mr-60 {margin-right:60px !important;}
+.mr-70 {margin-right:70px !important;}
+.mr-80 {margin-right:80px !important;}
+.mr-90 {margin-right:90px !important;}
+.mr-100 {margin-right:100px !important;}
+/* margin-bottom */
+.mb-0 {margin-bottom:0 !important;}
+.mb-10 {margin-bottom:10px !important;}
+.mb-15 {margin-bottom:15px !important;}
+.mb-20 {margin-bottom:20px !important;}
+.mb-25 {margin-bottom:25px !important;}
+.mb-30 {margin-bottom:30px !important;}
+.mb-35 {margin-bottom:35px !important;}
+.mb-40 {margin-bottom:40px !important;}
+.mb-45 {margin-bottom:45px !important;}
+.mb-50 {margin-bottom:50px !important;}
+.mb-60 {margin-bottom:60px !important;}
+.mb-70 {margin-bottom:70px !important;}
+.mb-80 {margin-bottom:80px !important;}
+.mb-90 {margin-bottom:90px !important;}
+.mb-100 {margin-bottom:100px !important;}
+/* margin-left */
+.ml-0 {margin-left:0 !important;}
+.ml-10 {margin-left:10px !important;}
+.ml-15 {margin-left:15px !important;}
+.ml-20 {margin-left:20px !important;}
+.ml-25 {margin-left:25px !important;}
+.ml-30 {margin-left:30px !important;}
+.ml-35 {margin-left:35px !important;}
+.ml-40 {margin-left:40px !important;}
+.ml-45 {margin-left:45px !important;}
+.ml-50 {margin-left:50px !important;}
+.ml-60 {margin-left:60px !important;}
+.ml-70 {margin-left:70px !important;}
+.ml-80 {margin-left:80px !important;}
+.ml-90 {margin-left:90px !important;}
+.ml-100 {margin-left:100px !important;}
+
+
+/* ==========================================================================
+   bstones.js 사용시 필요한 CSS
+   ========================================================================== */
+
+/* layer popup */
+.layer_pop {display:none;}
+.dim {display:none; position:absolute; z-index:100; background:#000;}
+
+
+/* ==========================================================================
+   반응형 필요시 참조
+   ========================================================================== */
+
+@media only screen and (max-width:768px) {      /* (35em) 560px */
+    /* 태블릿 영역 */
+}
+
+@media only screen and (max-width:480px) {
+    /* 모바일 (필요시 확장) */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio:1.25),
+       (min-resolution:1.25dppx),
+       (min-resolution:120dpi) {
+    /* 고해상도 기기용 스타일 영역 */
+}
+
+
+/* ==========================================================================
+   프린트용 스타일 (인쇄 필요시만)
+   ==========================================================================*/
+   
+@media print {
+    *, *:before, *:after, *:first-letter, *:first-line {background:transparent !important; color:#000 !important; box-shadow:none !important; text-shadow:none !important;}
+    a, a:visited {text-decoration:underline;}
+    a[href]:after {content:'(' attr(href) ')';}
+    abbr[title]:after {content:'(' attr(title) ')';}
+    a[href^="#"]:after, a[href^="javascript:"]:after {content:'';} 
+    tr, img {page-break-inside:avoid;}
+    img {max-width:100% !important;}
+    p, h2, h3 {orphans:3; widows:3;}
+    h2, h3 {page-break-after:avoid;}
+}

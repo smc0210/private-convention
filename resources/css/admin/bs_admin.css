@@ -1,0 +1,565 @@
+/*!
+ * Start Bootstrap - SB Admin (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Global Styles */
+
+
+
+body {
+    margin-top: 100px;
+    background-color: #fff;
+    font-family:'Noto Sans', sans-serif;
+}
+
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+}
+
+
+
+#wrapper {
+    padding-left: 0;
+}
+
+#page-wrapper {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+}
+
+.huge {
+    font-size: 50px;
+    line-height: normal;
+}
+
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding:0;
+    }
+    #container {
+        padding-top:4%;
+    }
+    .container-fluid {padding-left:35px;}
+    .container-fluid.popup {padding-left:-15%;}
+}
+
+/* Top Navigation */
+
+.top-nav {
+    padding-right:5px;
+}
+.top-nav.navbar-right {
+    position:absolute;
+    right:50px;    
+}
+
+
+.top-nav>li {
+    display: inline-block;
+    float: left;
+}
+
+.top-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+    color: #999;
+}
+
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+    color: #fff;
+    background-color:#485563;
+}
+
+.top-nav>.open>.dropdown-menu {
+    float: left;
+    position: absolute;
+    margin-left: -100px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.top-nav>.open>.dropdown-menu>li>a {
+    white-space: normal;
+}
+
+ul.message-dropdown {
+    padding: 0;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+li.message-preview {
+    width: 275px;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+li.message-preview>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li.message-footer {
+    margin: 5px 0;
+}
+
+ul.alert-dropdown {
+    width: 200px;
+}
+
+/* Side Navigation */
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 54px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border-right:2px solid #f5f5f5;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #fff;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+/*    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #485563;
+    }*/
+}
+
+    .side-nav>li>ul {
+        padding: 0;
+    }
+
+    .side-nav>li>ul>li>a {
+        display: block;
+        padding: 10px 15px 10px 38px;
+        text-decoration: none;
+        color: #000;
+    }
+
+}
+
+
+/* Flot Chart Containers */
+
+.flot-chart {
+    display: block;
+    height: 400px;
+}
+
+.flot-chart-content {
+    width: 100%;
+    height: 100%;
+}
+
+/* Custom Colored Panels */
+
+.huge {
+    font-size: 40px;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green > a {
+    color: #5cb85c;
+}
+
+.panel-green > a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red > .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red > a {
+    color: #d9534f;
+}
+
+.panel-red > a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow > .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow > a {
+    color: #f0ad4e;
+}
+
+.panel-yellow > a:hover {
+    color: #df8a13;
+}
+
+/*헤더와 메뉴 */
+.navbar {font-family:'Nanum-G'; background:#fff;border-width: 0 1px 4px 1px;border-color:#e6e6e6;}
+.navbar > * {border-bottom-right-radius:0!important;border-bottom-left-radius:0!important;}
+.navbar-nav {background:#fff;}
+.navbar-inverse .navbar-nav>li>a:focus {color:#000;background:#f5f5f5;}
+.navbar-inverse .navbar-nav>li>a:hover {color:#000;background:#e6e6e6;}
+.navbar-inverse .navbar-nav>.active {background-color:#485563;}
+.navbar-inverse .navbar-nav>.active>.active {background-color:#485563;}
+.navbar-inverse .navbar-nav>.active>a {color:#fff;background-color:#485563;}
+.navbar-inverse .navbar-nav>.active>a:hover {color:#fff;background-color:#485563;}
+.navbar-inverse .navbar-nav>.active:focus a {color:#fff;background-color:#485563;}
+.navbar-inverse .navbar-nav>li>a {color:#000;}
+.navbar-inverse .navbar-brand {color:#000; font-weight:700;}
+.navbar-inverse .navbar-brand:hover {color:#000;}
+.navbar-inverse .list-group-submenu {padding-left:0; }
+.navbar-inverse .list-group-submenu.list-group-submenu-1 {background:#fff; list-style:none;}
+a.list-group-item, button.list-group-item {color:#000;}
+a.list-group-item:focus, 
+button.list-group-item:focus {color:#000;text-decoration: none; background-color: #f5f5f5;}
+a.list-group-item:hover,
+button.list-group-item:hover {color:#000;text-decoration: none; background-color: #e6e6e6;}
+.list-group-item { padding:10px 15px 10px 58px;background-color:transparent; color:#000;}
+.list-group-item:first-child {border-radius:0!important;}
+.list-group-item:last-child {margin-bottom: -1px;border-bottom-right-radius:0!important;border-bottom-left-radius:0!important;}
+.list-group-item .fa-caret-down {float: right;}
+.navbar-inverse li > ul .list-group-item:before {content: "-"; padding-right:8px; font-size:6px;}
+.page-header {margin-top:0px}
+
+
+/* 모바일 메뉴*/
+.navbar-inverse .navbar-toggle {float:right;padding:18px 14px;margin:0 4px 0 0;background-image: none;border:none;border-radius:0;}
+.navbar-inverse .navbar-toggle:focus .icon-bar, 
+.navbar-inverse .navbar-toggle:hover .icon-bar {background-color:#fff;}
+.navbar-inverse .navbar-toggle .icon-bar {background:#485563;}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {background-color:#485563;}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {border-color:#e6e6e6;}
+.side-nav>li>ul>li>a:hover {color:#000;background:#dfdfdf;}
+.dropdown .fa-caret-down {float:right;} 
+
+/* 기본 스타일 */
+html {font-family:'Noto Sans',"Arial",'AppleGothic','sans-serif';-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+label {font-weight:200;}
+h1.page-header {font-size: 30px; font-weight:700;}
+.container-fluid {padding-bottom:100px;}
+.small {margin-left:12px;}
+.essential {margin-left:3px;font-size: 10px;color: #ef3a41;}
+.row {margin-top:30px;}
+.search_area {overflow:hidden;}
+.form-group {margin-bottom:15px !important;}
+.page_grp {text-align:center;}
+
+
+/* 로그인 페이지 */
+#wrap {width:100%}
+body {background:#fff;}
+body.login {padding-top:40px;padding-bottom:40px;background:url(../../images/admin/bg_pt.png) center top;}
+.form-signin-heading {font-family:'Noto Sans';font-size:28px;font-weight:normal;letter-spacing:1px;}
+.login_box {max-width:560px;padding:1% 7% 5%;margin:0 auto;top:50%;background:#fff;border: 1px solid #d2d2d2;}
+.login_box .logo {width:120px;}
+.form-signin {max-width:370px;padding:15px;margin:0 auto;}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {margin-bottom:20px;}
+.form-signin .checkbox {font-weight: normal;}
+.form-signin .check_type {text-align:right;margin-bottom:6px;}
+.form-signin .check_type label {position:relative; top:-3px;font-weight:300;}
+.form-signin .form-control {position: relative;height: auto;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding: 10px;font-size: 16px;
+    background:#fff;
+    display:block;width:100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius:0px;
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); */
+    /* box-shadow: inset 0 1px 1px rgba(0,0,0,.075); */
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-signin .form-control:focus {z-index:2;
+    border-color:none;
+    outline: 0;
+    -webkit-box-shadow:0px 0px 10px rgba(0,0,0,.175);
+    box-shadow:0px 0px 10px rgba(0,0,0,.175);
+    /*border:0.5px solid gray;*/
+}
+.form-signin input[type="text"] {margin-bottom:-1px;border-bottom-right-radius:0;border-bottom-left-radius:0;}
+.form-signin input[type="password"] {margin-bottom:10px;border-top-left-radius:0;border-top-right-radius:0;}
+.login_box .input_type {}
+.login_box .btn_type a {background:#000; border:0;border-radius:2px;font-size:14px;letter-spacing:1px;}
+.login_box .btn_type a:hover {background:gray;}
+.login_box .copyright {margin:15px auto 0;width:76px;}
+.login_box .copyright span {font-size: 12px;}
+.page_grp {margin-top:30px;text-align:center;}
+
+ /* 파일첨부 */
+.file_upload {position:relative;}
+.file_upload .btn {position: absolute;top:0;right:0;z-index:10;}
+.file_upload .form-control {width:95%;}
+.file_btn {position: absolute;top:0;right:0;width:100px;height:34px;opacity:0;z-index:11;}
+
+/* 검색버튼 */
+.input_search {position:relative;}
+/* .input_search input {width:90%;} */
+.input_search .btn {position: absolute;top:0;right:0;height:34px;z-index:10;}
+
+/* 체크박스 */
+.chk_box {position:relative;}
+.chk_box.inline {position:relative;display:inline-block;margin-right:4px;}
+.chk_box input[type="checkbox"] {  /* 실제 체크박스는 화면에서 숨김 */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0
+}
+.chk_box input[type="checkbox"] + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.chk_box input[type="checkbox"] + label:before {  /* 가짜 체크박스 */
+    content:'';
+    display: inline-block;
+    width: 13px;  /* 체크박스의 너비를 지정 */
+    height: 13px;  /* 체크박스의 높이를 지정 */
+    line-height: 21px; /* 세로정렬을 위해 높이값과 일치 */
+    margin: -2px 8px 0 0;
+    text-align: center; 
+    vertical-align: middle;
+    background:url('../../images/admin/chk_design.png') 0 0 no-repeat;
+
+    background-size:13px                
+}
+.chk_box input[type="checkbox"] + label:active:before,
+.chk_box input[type="checkbox"]:checked + label:active:before {
+    
+}
+
+.chk_box input[type="checkbox"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+    content:'';
+    background:url('../../images/admin/chk_design.png') 0 -14px no-repeat;
+    background-size:13px;
+}
+/* 라디오 */
+.radi {position:relative;}
+.radi.inline {position:relative;display:inline-block;margin-right:4px;}
+.radi input[type="radio"] {  /* 실제 라디오버튼은 화면에서 숨김 */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0
+}
+.radi input[type="radio"] + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.radi input[type="radio"] + label:before {  /* 가짜 라디오버튼 */
+    content:'';
+    display: inline-block;
+    width: 13px;  /* 라디오버튼의 너비를 지정 */
+    height: 13px;  /* 라디오버튼의 높이를 지정 */
+    line-height: 21px; /* 세로정렬을 위해 높이값과 일치 */
+    margin: -2px 8px 0 0;
+    text-align: center; 
+    vertical-align: middle;
+    background:url('../../images/admin/radio_design.png') 0 0 no-repeat;
+    background-size:13px                
+}
+.radi input[type="radio"] + label:active:before,
+.radi input[type="radio"]:checked + label:active:before {
+    
+}
+
+.radi input[type="radio"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+    content:'';
+    background:url('../../images/admin/radio_design.png') 0 -14px no-repeat;
+    background-size:13px;
+}
+
+/* 테이블 */
+.table-bordered>thead>tr>th, 
+.table-bordered>tbody>tr>th, 
+.table-bordered>tfoot>tr>th, 
+.table-bordered>thead>tr>td, 
+.table-bordered>tbody>tr>td, 
+.table-bordered>tfoot>tr>td {border: 1px solid #eeeeee;}
+.table>tbody>tr.active>td, 
+.table>tbody>tr.active>th, 
+.table>tbody>tr>td.active, 
+.table>tbody>tr>th.active, 
+.table>tfoot>tr.active>td, 
+.table>tfoot>tr.active>th, 
+.table>tfoot>tr>td.active, 
+.table>tfoot>tr>th.active, 
+.table>thead>tr.active>td, 
+.table>thead>tr.active>th, 
+.table>thead>tr>td.active, 
+.table>thead>tr>th.active {background-color: #f5f5f5;}
+.table {word-break:break-all;}
+
+/* 날짜선택 */
+.period + i:before {padding-left:4px; font-size:16px;color:#333;}
+
+/* 버튼 */
+.btn {
+    display: inline-block;
+    padding: 6px 16px;
+    height:34px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+}
+button a {text-decoration:none; color:#333;}
+button a:hover {text-decoration:none;}
+.btn-default {border-radius:2px;font-size:14px;letter-spacing:1px;}
+.btn-active {border:0;border-radius:2px;font-size:14px;letter-spacing:1px;}
+.btn-primary {background:#485563;border:0;border-radius:2px;font-size:14px;letter-spacing:1px;}
+.btn-primary:hover {background:gray}
+.btn-success {border:0;border-radius:2px;font-size:14px;letter-spacing:1px;}
+.btn-success:hover {}
+.btn-info { border:0;border-radius:2px;font-size:14px;letter-spacing:1px;}
+.btn-info:hover {}
+.btn-warning {border:0;border-radius:2px;font-size:14px;letter-spacing:1px;}
+.btn-warning:hover {}
+.btn-danger {border:0;border-radius:2px;font-size:14px;letter-spacing:1px;}
+.btn-danger:hover {}
+
+/* 셀렉트 분류 */
+.input-group-addon {border-radius:2px;}
+.input-group.date .input-group-addon.cusor_auto {cursor:auto;}
+
+/* form 기본 */ 
+input[type="text"] {margin-bottom:-1px;}
+input[type="password"] {margin-bottom:10px;border-top-left-radius:0;border-top-right-radius:0;}
+.form-control {position: relative;height: auto;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding: 10px;font-size: 16px;background:#fff;display: block;width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius:2px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+    z-index:2;
+    border-color:#ccc;
+    outline:0;
+    -webkit-box-shadow:0px 0px 10px rgba(0,0,0,.175);
+    box-shadow:0px 0px 10px rgba(0,0,0,.175);
+}
+
+/* paging */
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color:#485563;
+    border-color:#485563;
+}
+.pagination>li>a, .pagination>li>span {
+    color:#555;
+}
+.total-cnt {font-size:18px;}
+.bold {font-weight:700;}
+
+/* 날짜선택 */
+.ch_date .form-group {width:48%;float:left;}
+.ch_date span.date {float:left;display:inline-block;height:34px;padding:5px 3px;}
+
+@media(min-width:800px) {
+
+.form-group.form-date {margin-bottom:0 !important;}
+}
+@media(max-width:800px) {
+    .ch_date .form-group.form-date {width:100%;float:none;display:table;}
+    .ch_date span.date {display:none;}
+}
+
+/* 주소찾기 */
+.adrr {width:90%; }
+.input_adrr {position:relative;margin-bottom:6px;}
+/* .input_search input {width:90%;} */
+.input_adrr .btn {position: absolute;top:0;right:0;height:34px;z-index:10;}

@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/** reset **/
+html {font-family:'Noto Sans'; font-size:14px; line-height:1.5; color:#333;}
+a {color:#333;}
+
+/** layout **/
+html, body {height:100%;}
+#wrap {height:100%;}

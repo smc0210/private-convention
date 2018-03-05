@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/**
+ * ! Bstones template v0.1
+ * @comment     customize v0.1
+ * @author      MCShin
+ * @Write		 2016-03-04
+ * @Modify		 2016-03-18
+ * @Modify      2017-02-14 (ARShin)
+ */
+
+/* ==========================================================================
+   기본 스타일 리셋
+   ========================================================================== */
+
+* {padding:0; border:0; margin:0; outline:0;}
+html, button, input, select, textarea {font-family:'맑은 고딕', 'Malgun Gothic', 'Modern H Light', '돋움', Dotum, Tahoma, Arial, AppleGothic, sans-serif; color:#222;}
+html {-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
+h1, h2, h3, h4, h5, h6 {font-size:100%; line-height:1.2;}
+i, em, address {font-style:normal; font-weight:normal;}
+b, strong {font-weight:bold;}
+dfn, em, address {font-style:normal;}
+ul, ol, dl {list-style:none;}
+img, video {max-width:100%;}
+legend, hr, caption {overflow:hidden; display:block; position:absolute; top:0; left:-1000em;}
+::-moz-selection {background:#b3d4fc; text-shadow:none;}
+::selection {background:#b3d4fc; text-shadow:none;}
+
+
+/* ==========================================================================
+   HTML5 display 정의
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {display:block;}
+audio, canvas, video {display:inline-block; vertical-align:baseline; *display:inline; *zoom:1;}
+audio:not([controls]) {display:none; height:0;}
+[hidden], template {display:none;}
+
+
+/* ==========================================================================
+   링크관련
+   ========================================================================== */
+
+a {background-color:transparent; text-decoration:none; color:#000;}
+a:active, a:hover {outline:0; text-decoration:none;}
+
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+fieldset {padding:0; border:0; margin:0;}
+label {vertical-align:middle;}
+button, input, select, textarea {vertical-align:middle;}
+button {overflow:visible; cursor:pointer;}
+button, select {text-transform:none;}
+button, input {line-height:normal;}
+button, html input[type=button], input[type=reset], input[type=submit] {-webkit-appearance:button; cursor:pointer;}
+button[disabled], html input[disabled] {cursor:default;}
+button::-moz-focus-inner, input::-moz-focus-inner {padding:0; border:0;}
+input[type=checkbox], input[type=radio] {box-sizing:border-box; padding:0;}
+input[type=checkbox] {width:12px; height:12px;}
+input[type=text], input[type=password] {height:18px; border:1px solid #c0c0c0; margin:0; font-size:12px; line-height:14px; color:#666;}
+input[type=search] {-webkit-appearance:textfield; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box;}
+input[type=search]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {-webkit-appearance:none;}
+textarea {overflow:auto; vertical-align:top; border:1px solid #c0c0c0; font-size:12px; line-height:14px; resize:vertical;}
+select {height:20px; font-size:12px; line-height:20px;}
+
+
+/* ==========================================================================
+   테이블 관련
+   ========================================================================== */
+
+table {width:100%; table-layout:fixed; border-collapse:collapse; border-spacing:0; empty-cells:show;}
+td, th {padding:0;}
+
+
+/* ==========================================================================
+   SVG 관련
+   ========================================================================== */
+
+svg:not(:root) {overflow:hidden;}

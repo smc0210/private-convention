@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/**
+ * ! Bstones template v0.1
+ * @comment     customize v0.1
+ * @author      MCShin
+ * @Write		 2016-03-04
+ * @Modify		 2016-03-18
+ * @Modify      2017-02-14 (ARshin : basic.css에서 태그와 관련된 것은 reset.css로 이동)
+ */
+
+/* ==========================================================================
+   기본 스타일 리셋
+   ========================================================================== */
+
+* {padding:0; border:0; margin:0; outline:0;}
+
+/**
+ * 1. 웹폰트 미사용시 사용할 기본 시스템 폰트 및 컬러 초기화
+ * 2. iOS 에서 가로, 세로모드로 변경시 글자크기 조정하지 않도록 설정
+ */
+html, button, input, select, textarea {font-family:'맑은 고딕', 'Malgun Gothic', 'Modern H Light', '돋움', Dotum, Tahoma, Arial, AppleGothic, sans-serif; color:#222;}     /* 1 */
+html {-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;}     /* 2 */
+
+h1, h2, h3, h4, h5, h6 {font-size:100%; line-height:1.2;}
+
+/* 특수 font 기본 디자인 초기화 */
+i, em, address {font-style:normal; font-weight:normal;}
+
+/* Firefox 4+, Safari, Chrome 에서 `bolder` 속성 초기화 */
+b, strong {font-weight:bold;}
+
+/* Safari, Chrome 렌더링 초기화 (필요시 `common.css` 에서 직접 변형) */
+dfn, em, address {font-style:normal;}
+
+ul, ol, dl {list-style:none;}
+img, video {max-width:100%;}
+
+/* 웹 접근성 대응에 필요한 요소들 보이지 않도록 할때 */
+legend, hr, caption {overflow:hidden; display:block; position:absolute; top:0; left:-1000em;}
+
+/* 드래그로 블록 선택시 (텍스트 영역) `text-shadow` 삭제 및 윈도우 기본색상으로 통일 */
+::-moz-selection {background:#b3d4fc; text-shadow:none;} 
+::selection {background:#b3d4fc; text-shadow:none;}
+
+
+/* ==========================================================================
+   HTML5 display 정의
+   ========================================================================== */
+
+/**
+ * IE 8/9 에서 지원하지 않는 HTML5 속성 `block` 처리
+ * IE 10/11 과 FireFox(3) 에서 지원하지 않는 `details` 와 `summary` 속성 `block` 처리
+ * IE 11 에서 지원하지 않는 `main` 속성 `block` 처리
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {display:block;}
+
+/**
+ * `audio`, `canvas`, `video` 요소들은 `display` 속성값으로 `inline-block` 을 가지나,
+ * 이를 지원하지 않는 브라우저들은 직접 지정해줘야 함
+ */
+audio, canvas, video {display:inline-block; vertical-align:baseline; *display:inline; *zoom:1;}
+
+/**
+ * 1. `audio` 속성 `controls` 안보이도록
+ * 2. iOS 5 이상의 모바일 사파리 브라우저 대응용
+ */
+audio:not([controls]) {
+   display:none;          /* 1 */ 
+   height:0;              /* 2 */
+}
+
+/**
+ * `[hidden]` 스타일 지원하지 않는 IE 8/9/10 대응
+ *  IE 8/9/10/11, Safari, Firefox < 22 에서 `template` element 처리
+ */
+[hidden], template {display:none;}
+
+
+/* ==========================================================================
+   링크관련
+   ========================================================================== */
+
+/**
+ * 1. IE 10 에서 링크 active 시 회색 배경색 삭제 -> 투명처리
+ * 2. a 태그 reset
+ */
+a {
+   background-color:transparent;          /* 1 */ 
+   text-decoration:none; color:#000;      /* 2 */
+}
+
+/* active/hover 상태시 outline 렌더링 결과가 브라우저마다 상이하므로 동일하게 설정 */
+a:active, a:hover {outline:0; text-decoration:none;}
+
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/* 기본 fieldset styles 초기화 */
+fieldset {padding:0; border:0; margin:0;}
+
+label  {vertical-align:middle;}
+
+/* form 자식요소들 모든 브라우저에서 동일하게 렌더링 되도록 초기화 */
+button, input, select, textarea {vertical-align:middle;}
+
+/* IE 8/9/10/11 에서 `hidden` 으로 설정된 `overflow` 초기화 */
+button {overflow:visible; cursor:pointer;}
+
+/* `button` 과 `select` 요소의 value 속성이 브라우저마다 각각 대소문자 표시 다르게 하는 이슈 */
+button, select {text-transform:none;}
+
+/* Firefox 4+ 에서 UA stylesheet `!important` 셋팅된 `input`의 `line-height` 속성 셋팅 */
+button, input {line-height:normal;}
+
+/**
+ * 1. Android 4.0+ 버전에 포함된 웹킷 브라우저에서 `audio` 와 `video` 에 발생하는 버그 방지 위해 설정
+ * 2. iOS 에서 `input` 의 type 속성값 인식하지 못하는 버그 해결
+ * 3. `image-type` 과 `input` 타입의 커서 스타일 통일
+ */
+button, 
+html input[type=button],         /* 1 */ 
+input[type=reset], 
+input[type=submit] {
+   -webkit-appearance:button;    /* 2 */ 
+   cursor:pointer;               /* 3 */
+}
+
+/* 비활성화 요소의 기본커서 재정의 */
+button[disabled], html input[disabled] {cursor:default;}
+
+/* Firefox 4+ 에서 내부 `padding` 과 `border` 제거 */
+button::-moz-focus-inner, input::-moz-focus-inner {padding:0; border:0;}
+
+/**
+ * 1. IE 8/9/10 에서 `box-sizing` 부분 이슈 초기화
+ * 2. IE 8/9/10 에서 `padding` 넘치는 문제 초기화
+ */
+input[type=checkbox], input[type=radio] {
+   box-sizing:border-box;          /* 1 */ 
+   padding:0;                      /* 2 */
+}
+
+input[type=checkbox] {width:12px; height:12px;}
+input[type=text], input[type=password] {height:18px; border:1px solid #c0c0c0; margin:0; font-size:12px; line-height:14px; color:#666;}
+
+/**
+ * 1. Safari 와 Chrome 에서 전체영역 설정 텍스트 입력할 수 있는 textfield로 설정
+ * 2. 해당영역의 크기를 지정하는데 순수한 전체 컨텐츠 영역만큼의 크기만 설정하는 `content-box` 속성값을 모든 브라우저에 적용
+ */
+input[type=search] {
+   -webkit-appearance:textfield;     /* 1 */
+   -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box;     /* 2 */
+}
+
+/* Mac OS X 의 Safari 와 Chrome 에서 `input` type 이 `search` 일때 검색영역에 자동으로 생기는 `x` 버튼 제거 */
+input[type=search]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {-webkit-appearance:none;}
+
+/**
+ * 1. IE 8/9/10/11 의 `textarea` 에 기본으로 지정된 세로 스크롤 막대 제거 및 텍스트 수직 정렬 상태 상단으로 초기화
+ * 2. `textarea` 세로 크기 조정만 허용 
+ */
+textarea {
+   overflow:auto; vertical-align:top;          /* 1 */
+   border:1px solid #c0c0c0; font-size:12px; line-height:14px; 
+   resize:vertical;                            /* 2 */
+}
+
+select {height:20px; font-size:12px; line-height:20px;}
+
+
+/* ==========================================================================
+   테이블 관련
+   ========================================================================== */
+
+/* 1. 테이블 셀 간격 초기화 */
+table {
+   width:100%; table-layout:fixed;
+   border-collapse:collapse; border-spacing:0; empty-cells:show;     /* 1 */
+}
+td, th {padding:0;}
+
+
+/* ==========================================================================
+   SVG 관련
+   ========================================================================== */
+
+/* IE 9/10/11 에서 svg 요소가 설정된 크기를 넘어갔을 경우 이미지 요소 깨지는 문제 fix */
+svg:not(:root) {overflow:hidden;}

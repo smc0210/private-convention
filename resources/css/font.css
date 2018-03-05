@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+/* 노토산스 */
+
+@font-face {
+    font-family:'Noto Sans';
+    font-style:normal;
+    font-weight:100;
+    src:local('Noto Sans Thin'), local('NotoSans-Thin');
+    src:url(../fonts/NotoSans-Thin.eot);
+    src:url(../fonts/NotoSans-Thin.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/NotoSans-Thin.woff2) format('woff2'),
+        url(../fonts/NotoSans-Thin.woff) format('woff'),
+        url(../fonts/NotoSans-Thin.otf) format('opentype');
+}
+
+@font-face {
+  font-family:'Noto Sans';
+  font-style:normal;
+  font-weight:200;
+  src:local('Noto Sans Light'), local('NotoSans-Light');
+  src:url(../fonts/NotoSans-Light.eot);
+  src:url(../fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NotoSans-Light.woff2) format('woff2'),
+      url(../fonts/NotoSans-Light.woff) format('woff'),
+      url(../fonts/NotoSans-Light.otf) format('opentype');
+}
+
+@font-face {
+  font-family:'Noto Sans';
+  font-style:normal;
+  font-weight:300;
+  src:local('Noto Sans DemiLight'), local('NotoSans-DemiLight');
+  src:url(../fonts/NotoSans-DemiLight.eot);
+  src:url(../fonts/NotoSans-DemiLight.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NotoSans-DemiLight.woff2) format('woff2'),
+      url(../fonts/NotoSans-DemiLight.woff) format('woff'),
+      url(../fonts/NotoSans-DemiLight.otf) format('opentype');
+}
+
+@font-face {
+  font-family:'Noto Sans';
+  font-style:normal;
+  font-weight:400;
+  src:local('Noto Sans Regular'), local('NotoSans-Regular');
+  src:url(../fonts/NotoSans-Regular.eot);
+  src:url(../fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+      url(../fonts/NotoSans-Regular.woff) format('woff'),
+      url(../fonts/NotoSans-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family:'Noto Sans';
+  font-style:normal;
+  font-weight:500;
+  src:local('Noto Sans Medium'), local('NotoSans-Medium');
+  src:url(../fonts/NotoSans-Medium.eot);
+  src:url(../fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NotoSans-Medium.woff2) format('woff2'),
+      url(../fonts/NotoSans-Medium.woff) format('woff'),
+      url(../fonts/NotoSans-Medium.otf) format('opentype');
+}
+
+@font-face {
+  font-family:'Noto Sans';
+  font-style:normal;
+  font-weight:700;
+  src:local('Noto Sans Bold'), local('NotoSans-Bold');
+  src: url(../fonts/NotoSans-Bold.eot);
+  src: url(../fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NotoSans-Bold.woff2) format('woff2'),
+       url(../fonts/NotoSans-Bold.woff) format('woff'),
+       url(../fonts/NotoSans-Bold.otf) format('opentype');
+}
+
+/* 나눔고딕 */
+
+@font-face {
+  font-family:'Nanum Gothic';
+  font-style:normal;
+  font-weight:400;
+  src:local('NanumGothic Regular'), local('NanumGothic-Regular');
+  src:url(../fonts/NanumGothic-Regular.eot);
+  src:url(../fonts/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NanumGothic-Regular.woff2) format('woff2'),
+      url(../fonts/NanumGothic-Regular.woff) format('woff'),
+      url(../fonts/NanumGothic-Regular.ttf) format('truetype');
+}
+
+/* 나눔바른고딕 */
+
+@font-face {
+  font-family:'Nanum Barun Gothic';
+  font-style:normal;
+  font-weight:100;
+  src:local('NanumBarunGothic UltraLight'), local('NanumBarunGothic-UltraLight');
+  src:url(../fonts/NanumBarunGothic-UltraLight.eot);
+  src:url(../fonts/NanumBarunGothic-UltraLight.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NanumBarunGothic-UltraLight.woff) format('woff'),
+      url(../fonts/NanumBarunGothic-UltraLight.otf) format('opentype');
+}
+
+@font-face {
+  font-family:'Nanum Barun Gothic';
+  font-style:normal;
+  font-weight:200;
+  src:local('NanumBarunGothic Light'), local('NanumBarunGothic-Light');
+  src:url(../fonts/NanumBarunGothic-Light.eot);
+  src:url(../fonts/NanumBarunGothic-Light.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NanumBarunGothic-Light.woff) format('woff'),
+      url(../fonts/NanumBarunGothic-Light.otf) format('opentype');
+}
+
+@font-face {
+  font-family:'Nanum Barun Gothic';
+  font-style:normal;
+  font-weight:400;
+  src:local('NanumBarunGothic Regular'), local('NanumBarunGothic-Regular');
+  src:url(../fonts/NanumBarunGothic-Regular.eot);
+  src:url(../fonts/NanumBarunGothic-Regular.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NanumBarunGothic-Regular.woff) format('woff'),
+      url(../fonts/NanumBarunGothic-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family:'Nanum Barun Gothic';
+  font-style:normal;
+  font-weight:700;
+  src:local('NanumBarunGothic Bold'), local('NanumBarunGothic-Bold');
+  src:url(../fonts/NanumBarunGothic-Bold.eot);
+  src:url(../fonts/NanumBarunGothic-Bold.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NanumBarunGothic-Bold.woff) format('woff'),
+      url(../fonts/NanumBarunGothic-Bold.otf) format('opentype');
+}
+
+/* 릭스고딕 */
+
+@font-face {
+  font-family:'RixGo';
+  font-style:normal;
+  font-weight:200;
+  src:local('RixGo Light'), local('RixGo-Light');
+  src:url(../fonts/RixGo-Light.eot);
+  src:url(../fonts/RixGo-Light.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/RixGo-Light.woff) format('woff'),
+      url(../fonts/RixGo-Light.TTF) format('truetype');
+}
+
+@font-face {
+  font-family:'RixGo';
+  font-style:normal;
+  font-weight:500;
+  src:local('RixGo Medium'), local('RixGo-Medium');
+  src:url(../fonts/RixGo-Medium.eot);
+  src:url(../fonts/RixGo-Medium.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/RixGo-Medium.woff2) format('woff2'),
+      url(../fonts/RixGo-Medium.woff) format('woff'),
+      url(../fonts/RixGo-Medium.otf) format('opentype'),
+      url(../fonts/RixGo-Medium.TTF) format('truetype');
+}
+
+@font-face {
+  font-family:'RixGo';
+  font-style:normal;
+  font-weight:700;
+  src:local('RixGo Bold'), local('RixGo-Bold');
+  src:url(../fonts/RixGo-Bold.eot);
+  src:url(../fonts/RixGo-Bold.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/RixGo-Bold.woff) format('woff'),
+      url(../fonts/RixGo-Bold.TTF) format('truetype');
+}
+
+@font-face {
+  font-family:'RixGo';
+  font-style:normal;
+  font-weight:900;
+  src:local('RixGo ExtraBold'), local('RixGo-ExtraBold');
+  src:url(../fonts/RixGo-ExtraBold.eot);
+  src:url(../fonts/RixGo-ExtraBold.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/RixGo-ExtraBold.woff) format('woff'),
+      url(../fonts/RixGo-ExtraBold.TTF) format('truetype');
+}

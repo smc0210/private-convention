@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Project Name</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no, date=no">
+	<!-- Material Design fonts -->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="./resources/css/page/bootstrap.min.css">
+	<!-- Bootstrap Material Design -->
+	<link rel="stylesheet" type="text/css" href="./resources/css/page/bootstrap-material-design.css">
+	<link rel="stylesheet" type="text/css" href="./resources/css/page/ripples.min.css">
+	<script type="text/javascript" src="./resources/js/vendor/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="./resources/js/vendor/holder.min.js"></script>
+	<style>
+		body {background-color:#fff !important;}
+		body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {font-weight:500 !important;}
+		h1, h2, h3, .h1, .h2, .h3 {margin-top:0 !important; margin-bottom:0 !important;}
+		h3, .h3 {font-size:18px !important;}
+		#wrap {margin-top:90px !important;}
+		#header {position:fixed; z-index:10; top:0; width:100%;}
+		#footer {position:relative; bottom:0; width:100%; height:50px; border-top:3px solid #003530; background-color:#009688;}
+		address {padding-left:10px !important; margin-top:10px !important; margin-bottom:10px !important; color:#fff;}
+		.navbar-default {padding-top:5px !important; padding-left:20px !important; border-bottom:3px solid #003530; font-size:24px; color:#fff !important;}
+		.panel {margin-bottom:40px !important;}
+		.panel-tit .panel-heading {overflow:hidden; border-color:#559891; background-color:#3cb1a6 !important; color:#fff; cursor:pointer;}
+		.panel-tit .panel-heading .sub_tit {float:left;}
+		/* .panel-tit .panel-heading .material-icons {float:left; margin-top:10px !important; margin-bottom:10px !important; margin-left:10px !important; cursor:pointer;} */
+		.table {margin-bottom:0;}		
+		.panel-body {padding:0px !important;}
+		.table th {background-color:#f5f5f5 !important;}
+		td.del {color:red !important; text-decoration:line-through !important;}
+		tr.ing td {background-color:#dff0d8 !important;}
+		tr.comp td {background-color:#d9edf7 !important;}
+		tr.mod td {background-color:#fcf8e3 !important;}
+		tr.del td,
+		tr.del td a {background-color:#f2dede; color:red !important; text-decoration:line-through !important;}		
+		/* 반응형 */
+		@media all and (min-width:320px) and (max-width:640px) {
+			body {font-size:12px;}
+		}
+		@media (max-width: 767px) {
+			.hidden-xs {display:none! important;}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap">
+		<div id="header" class="bs-component">
+        	<div class="navbar navbar-default">Project Name</div>        
+        </div>
+		<!-- container -->
+		<div id="container" class="container">
+			<div class="row ">
+				<div class="col-xs-12">
+					<div class="panel panel-default panel-tit ">
+						<div class="panel-heading "><h3 class="sub_tit">정의</h3></div>
+						<div class="panel-body">
+							<table class="table table-bordered">
+								<tr>
+									<th class="th_st">상태</th>
+									<th class="ing">진행중</th>
+									<th class="comp">완료</th>
+									<th class="mod">수정</th>
+									<th class="del">삭제</th>
+								</tr>
+								<tr>
+									<td>Add Class</td>
+									<td class="ing success">ing</td>
+									<td class="comp info">comp</td>
+									<td class="mod warning">mod</td>
+									<td class="del danger">del</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- row 단위로 끊어서 사용 -->
+			<div class="row ">
+				<div class="col-xs-12">
+					<div class="panel panel-default panel-tit ">
+						<div class="panel-heading ">
+							<h3 class="sub_tit" data-toggle="tooltip" data-placement="left" title="" data-original-title="Tooltip on left">PAGE URL - menu1</h3>
+						</div>
+						<div class="panel-body">
+							<table class="table table-bordered">
+								<tr>
+									<th class="th_st">1Depth</th>
+									<th class="th_st">2Depth</th>
+									<th class="th_st hidden-xs">3Depth</th>
+									<th class="th_st">File</th>
+									<th class="th_st hidden-xs">Date</th>
+									<th class="th_st hidden-xs">Etc</th>
+								</tr>
+								<tr class="ing">
+									<td>로그인</td>
+									<td></td>
+									<td class="hidden-xs"></td>
+									<td><a href="./menu1/login.html" target="_blank">login.html</a></td>
+									<td class="hidden-xs">2016.09.27</td>
+									<td class="hidden-xs">비고내용 작성</td>
+								</tr>
+								<tr class="comp">
+									<td>메인관리</td>
+									<td>메인관리1</td>
+									<td class="hidden-xs">list</td>
+									<td><a href="./menu1/mainManageList.html" target="_blank">mainManageList.html</a></td>
+									<td class="hidden-xs">2016.09.27</td>
+									<td class="hidden-xs">비고내용 작성</td>
+								</tr>
+								<tr class="mod">
+									<td>메인관리</td>
+									<td>메인관리1</td>
+									<td class="hidden-xs">view</td>
+									<td><a href="./menu1/mainManageView.html" target="_blank">mainManageView.html</a></td>
+									<td class="hidden-xs">2016.09.27</td>
+									<td class="hidden-xs">비고내용 작성</td>
+								</tr>
+								<tr class="del">
+									<td>메인관리</td>
+									<td>메인관리1</td>
+									<td class="hidden-xs">list</td>
+									<td><a href="./menu1/mainManageList2.html" target="_blank">mainManageList2.html</a></td>
+									<td class="hidden-xs">2016.09.27</td>
+									<td class="hidden-xs">비고내용 작성</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //row 단위로 끊어서 사용 -->
+
+			<!-- row 단위로 끊어서 사용 -->
+			<div class="row ">
+				<div class="col-xs-12">
+					<div class="panel panel-default panel-tit ">
+						<div class="panel-heading ">
+							<h3 class="sub_tit" data-toggle="tooltip" data-placement="left" title="" data-original-title="Tooltip on left">PAGE URL - menu2</h3>						
+						</div>
+						<div class="panel-body">
+							<table class="table table-bordered">
+								<tr>
+									<th class="th_st">1Depth</th>
+									<th class="th_st">2Depth</th>
+									<th class="th_st hidden-xs">3Depth</th>
+									<th class="th_st">File</th>
+									<th class="th_st hidden-xs">Date</th>
+									<th class="th_st hidden-xs">Etc</th>
+								</tr>
+								<tr class="comp">
+									<td>로그인</td>
+									<td></td>
+									<td class="hidden-xs"></td>
+									<td><a href="./menu1/login.html" target="_blank">login.html</a></td>
+									<td class="hidden-xs">2016.09.27</td>
+									<td class="hidden-xs">비고내용 작성</td>
+								</tr>
+								<tr class="comp">
+									<td>메인관리</td>
+									<td>메인관리2</td>
+									<td class="hidden-xs">list</td>
+									<td><a href="./menu1/mainManageList.html" target="_blank">mainManageList.html</a></td>
+									<td class="hidden-xs">2016.09.27</td>
+									<td class="hidden-xs">비고내용 작성</td>
+								</tr>
+								<tr class="comp">
+									<td>메인관리</td>
+									<td>메인관리2</td>
+									<td class="hidden-xs">view</td>
+									<td><a href="./menu1/mainManageView.html" target="_blank">mainManageView.html</a></td>
+									<td class="hidden-xs">2016.09.27</td>
+									<td class="hidden-xs">비고내용 작성</td>
+								</tr>
+								<tr class="del">
+									<td>메인관리</td>
+									<td>메인관리2</td>
+									<td class="hidden-xs">write</td>
+									<td><a href="./menu1/mainManageList2.html" target="_blank">mainManageList2.html</a></td>
+									<td class="hidden-xs">2016.09.27</td>
+									<td class="hidden-xs">비고내용 작성</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //row 단위로 끊어서 사용 -->
+
+			<!-- row 단위로 끊어서 사용 -->
+			<div class="row ">
+				<div class="col-xs-12">
+					<div class="panel panel-default panel-tit ">
+						<div class="panel-heading ">
+							<h3 class="sub_tit" data-toggle="tooltip" data-placement="left" title="" data-original-title="Tooltip on left">PAGE URL - menu3</h3>						
+						</div>
+						<div class="panel-body">
+							<table class="table table-bordered ">
+								<tr>
+									<th class="th_st">1Depth</th>
+									<th class="th_st">2Depth</th>
+									<th class="th_st hidden-xs">3Depth</th>
+									<th class="th_st">File</th>
+									<th class="th_st hidden-xs">Date</th>
+									<th class="th_st hidden-xs">Etc</th>
+								</tr>
+								<tr class="ing">
+									<td>로그인</td>
+									<td></td>
+									<td class="hidden-xs"></td>
+									<td><a href="./menu1/login.html" target="_blank">login.html</a></td>
+									<td class="hidden-xs">2016.09.27</td>
+									<td class="hidden-xs">비고내용 작성</td>
+								</tr>
+								<tr class="ing">
+									<td>메인관리</td>
+									<td>메인관리3</td>
+									<td class="hidden-xs">list</td>
+									<td><a href="./menu1/mainManageList.html" target="_blank">mainManageList.html</a></td>
+									<td class="hidden-xs">2016.09.27</td>
+									<td class="hidden-xs">비고내용 작성</td>
+								</tr>
+								<tr class="mod">
+									<td>메인관리</td>
+									<td>메인관리3</td>
+									<td class="hidden-xs">view</td>
+									<td><a href="./menu1/mainManageView.html" target="_blank">mainManageView.html</a></td>
+									<td class="hidden-xs">2016.09.27</td>
+									<td class="hidden-xs">비고내용 작성</td>
+								</tr>
+								<tr class="del">
+									<td>메인관리</td>
+									<td>메인관리3</td>
+									<td class="hidden-xs">write</td>
+									<td><a href="./menu1/mainManageList2.html" target="_blank">mainManageList2.html</a></td>
+									<td class="hidden-xs">2016.09.27</td>
+									<td class="hidden-xs">비고내용 작성</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //row 단위로 끊어서 사용 -->
+		</div>
+		<!--//container -->
+	</div>
+	<!--//wrap -->
+	
+	<!-- footer -->
+	<div id="footer">
+		<address>WEB PUBLISHING TEAM.</address>
+	</div>
+	<!--//footer -->
+
+	<script>
+		$(function(){
+			$('.panel-heading').on('click', function(){
+				$(this).next('.panel-body').slideToggle('slow');
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Noto Sans Thin'), local('Noto Sans Thin'), local('Noto Sans Thin');
+    src: url(../../fonts/NotoSans-Thin.eot);
+    src: url(../../fonts/NotoSans-Thin.eot?#iefix) format('embedded-opentype'),
+         url(../../fonts/NotoSans-Thin.woff2) format('woff2'),
+         url(../../fonts/NotoSans-Thin.woff) format('woff'),
+         url(../../fonts/NotoSans-Thin.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Noto Sans Light'), local('Noto Sans Light'), local('Noto Sans Light');
+  src: url(../../fonts/NotoSans-Light.eot);
+  src: url(../../fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+       url(../../fonts/NotoSans-Light.woff2) format('woff2'),
+       url(../../fonts/NotoSans-Light.woff) format('woff'),
+       url(../../fonts/NotoSans-Light.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans-DemiLight'), local('Noto Sans-DemiLight'), local('Noto Sans-DemiLight');
+  src: url(../../fonts/NotoSans-DemiLight.eot);
+  src: url(../../fonts/NotoSans-DemiLight.eot?#iefix) format('embedded-opentype'),
+       url(../../fonts/NotoSans-DemiLight.woff2) format('woff2'),
+       url(../../fonts/NotoSans-DemiLight.woff) format('woff'),
+       url(../../fonts/NotoSans-DemiLight.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans-Regular'), local('Noto Sans-Regular'), local('Noto Sans-Regular');
+  src: url(../../fonts/NotoSans-Regular.eot);
+  src: url(../../fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../../fonts/NotoSans-Regular.woff2) format('woff2'),
+       url(../../fonts/NotoSans-Regular.woff) format('woff'),
+       url(../../fonts/NotoSans-Regular.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans-Medium'), local('Noto Sans-Medium'), local('Noto Sans-Medium');
+  src: url(../../fonts/NotoSans-Medium.eot);
+  src: url(../../fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+       url(../../fonts/NotoSans-Medium.woff2) format('woff2'),
+       url(../../fonts/NotoSans-Medium.woff) format('woff'),
+       url(../../fonts/NotoSans-Medium.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('Noto Sans Bold'), local('Noto Sans Bold');
+  src: url(../../fonts/NotoSans-Bold.eot);
+  src: url(../../fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../../fonts/NotoSans-Bold.woff2) format('woff2'),
+       url(../../fonts/NotoSans-Bold.woff) format('woff'),
+       url(../../fonts/NotoSans-Bold.otf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Nanum-G'; /* Nanum Gothic */
+  font-style: normal;
+  font-weight: 400;
+  src: local('NanumGothic Regular'), local('NanumGothic-Regular');
+  src: url(../../fonts/NanumGothic-Regular.eot);
+  src: url(../../fonts/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../../fonts/NanumGothic-Regular.woff2) format('woff2'),
+       url(../../fonts/NanumGothic-Regular.woff) format('woff'),
+       url(../../fonts/NanumGothic-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'RixGo';
+  font-style: normal;
+  font-weight: 500;
+  src: local('RixGo Medium');
+  src: url(../../fonts/RixGo-M.eot);
+  src: url(../../fonts/RixGo-M.eot?#iefix) format('embedded-opentype'),
+       url(../../fonts/RixGo-M.woff2) format('woff2'),
+       url(../../fonts/RixGo-M.woff) format('woff'),
+       url(../../fonts/RixGo-M.TTF) format('truetype');
+}
+
+@font-face {
+  font-family: 'RixGo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('RixGo Bold');
+  src: url(../../fonts/RixGo-B.eot);
+  src: url(../../fonts/RixGo-B.eot?#iefix) format('embedded-opentype'),       
+       url(../../fonts/RixGo-B.woff) format('woff'),
+       url(../../fonts/RixGo-B.TTF) format('truetype');
+}

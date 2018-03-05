@@ -1,0 +1,161 @@
+@charset "utf-8";
+/**
+ * ! Bstones template v0.1
+ * @comment     customize v0.1
+ * @author      MCShin
+ * @Write		2016-03-04
+ * @Modify		2016-03-15
+ */
+
+/* ==========================================================================
+   기본 스타일
+   ========================================================================== */
+html,button,input,select,textarea {color:#222;} 
+h1,h2,h3,h4,h5,h6 {font-size:100%;line-height:1.2;}
+i,em,address {font-style:normal;font-weight:normal;}
+table {width:100%;table-layout:fixed;}
+::-moz-selection {background:#b3d4fc;text-shadow:none;} 
+::selection {background:#b3d4fc;text-shadow:none;}
+fieldset {border:0;margin:0;padding:0;}
+textarea {resize:vertical;}
+i,em,address {font-style:normal;font-weight:normal;}
+
+/* ==========================================================================
+   헬퍼 클래스들
+   ========================================================================== */
+.visuallyhidden {border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus {clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto;}
+.invisible {visibility:hidden;}
+.clearfix:before,.clearfix:after {content:"";display:table;}
+.clearfix:after {clear:both;}
+.clearfix {*zoom:1;}
+.ir-pm {text-indent:-9999px;display:block;}
+.ir-wa {display:block;position:relative;z-index:-1;}
+.blind,legend,hr,caption {display:block;overflow:hidden;position:absolute;top:0;left:-1000em;}
+.center-block {display:block;margin-right:auto;margin-left:auto;}
+.pull-right {float:right !important;}
+.pull-left {float:left !important;}
+.over-h {overflow:hidden;}
+.show {display:block !important;}
+.hidden {display:none !important;visibility:hidden !important;}
+.text-overflow {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;}
+.text-overflow-noblock {overflow:hidden;text-overflow:ellipsis;white-space:pre-line;}
+/* 160329 헬퍼클래스 추가  */
+.text-c {text-align:center;}
+.mat-5 {margin-top:5px !important;}
+.mat-10 {margin-top:10px !important;}
+.mat-15 {margin-top:15px !important;}
+.mat-20 {margin-top:20px !important;}
+.mat-25 {margin-top:25px !important;}
+.mat-30 {margin-top:30px !important;}
+.mat-40 {margin-top:40px !important;}
+.mat-50 {margin-top:50px !important;}
+.mat-100 {margin-top:100px !important;}
+
+.mab-5 {margin-bottom:5px !important;}
+.mab-10 {margin-bottom:10px !important;}
+.mab-15 {margin-bottom:15px !important;}
+.mab-20 {margin-bottom:20px !important;}
+.mab-25 {margin-bottom:25px !important;}
+.mab-30 {margin-bottom:30px !important;}
+.mab-40 {margin-bottom:40px !important;}
+.mab-50 {margin-bottom:50px !important;}
+.mab-100 {margin-bottom:100px !important;}
+
+.mar-5 {margin-right:5px !important;}
+.mar-10 {margin-right:10px !important;}
+.mar-15 {margin-right:15px !important;}
+.mar-20 {margin-right:20px !important;}
+.mar-25 {margin-right:25px !important;}
+.mar-30 {margin-right:30px !important;}
+.mar-40 {margin-right:40px !important;}
+.mar-50 {margin-right:50px !important;}
+.mar-100 {margin-right:100px !important;}
+
+.mal-5 {margin-left:5px !important;}
+.mal-10 {margin-left:10px !important;}
+.mal-15 {margin-left:15px !important;}
+.mal-20 {margin-left:20px !important;}
+.mal-25 {margin-left:25px !important;}
+.mal-30 {margin-left:30px !important;}
+.mal-40 {margin-left:40px !important;}
+.mal-50 {margin-left:50px !important;}
+.mal-100 {margin-left:100px !important;}
+
+/* 160330 헬퍼클래스 추가  */
+.tbl {border-collapse:collapse;font-size:14px;width: 100%;max-width:100%;margin-bottom: 20px;}
+.tbl-bordered {border: 1px solid #ccc;}
+.tbl-bordered th, .tbl-bordered td {border: 1px solid #ccc;padding:3px}
+.tbl-bordered th {height:38px;}
+.tbl-bordered td, .tbl-bordered td a {height:28px;color:#767676}
+.tbl-bordered td {padding:5px 10px}
+.tbl-view th, .tbl-view td {padding:3px 10px}
+
+/* 160401 헬퍼클래스 추가  */
+.opacity-0 {opacity:0;}
+.por {position:relative;}
+
+/* 160404 헬퍼클래스 추가 */
+.txt-blue, .txt-blue > a {color:#286090;font-weight:bold} 
+.txt-red, .txt-red > a {color:#c9302c;font-weight:bold} 
+
+
+
+/* ==========================================================================
+   jQuery 사용 시 필요한 CSS
+   ========================================================================== */
+
+/* accordion */
+.accordion ul li {/*background:url('../../images/people/bg_faq01.gif') 30px 20px no-repeat; 백그라운드 이미지가 들어갈 시 사용*/ border-bottom:1px solid #ccc;}
+.accordion ul li > p {display:none;}
+.accordion ul li.curr {/*background:url('../../images/people/bg_faq01_on.gif') 30px 20px no-repeat; 백그라운드 이미지가 들어갈 시 사용*/}
+.accordion ul li.curr > p {display:block;}
+
+/* input design */
+.chk_img > .ico_chk {width:12px;height: 12px;margin:0;padding:0;background:url('../../images/common/bg_check.gif') no-repeat left top;display:inline-block;overflow:hidden;vertical-align:top;margin:3px 5px 0 0;}
+.chk_img.on > .ico_chk {background-position:left -12px;display:inline-block;vertical-align:top;margin:3px 5px 0 0;}
+.chk_img input[type=checkbox] {opacity:0;width:12px;height:12px;}
+
+/* layer popup */
+.layer_pop {display:none;}
+.dim {background:#000;position:absolute;z-index:100;display:none;}
+
+/* ==========================================================================
+   반응형 필요시 작성 할 영역
+   ========================================================================== */
+
+@media only screen and (max-width:768px) {      /* (35em) 560px*/
+    /* 태블릿 영역 */
+}
+
+@media only screen and (max-width:480px){
+    /* 모바일 (필요시 확장) */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* 고해상도 기기용 스타일 영역 */
+}
+
+/* ==========================================================================
+   프린트용 스타일 ( 인쇄 필요시만 )
+   ==========================================================================*/
+
+@media print {
+    *,*:before,*:after,*:first-letter,*:first-line {
+        background:transparent !important;
+        color:#000 !important;
+        box-shadow:none !important;
+        text-shadow:none !important;
+    }
+    a,a:visited {text-decoration:underline;}
+    a[href]:after {content:"(" attr(href) ")";}
+    abbr[title]:after {content:"(" attr(title) ")";}
+    a[href^="#"]:after,a[href^="javascript:"]:after {content:"";} 
+    tr,img {page-break-inside:avoid;}
+    img {max-width:100% !important;}
+    p,h2,h3 {orphans:3;widows:3;}
+    h2,h3 {page-break-after:avoid;}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bstones Admin Templete</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../resources/css/admin/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css" rel="stylesheet">  -->
+    <!-- Custom CSS -->
+    <link href="../resources/css/admin/bs_admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="../resources/css/admin/mng_import.css">
+    <script src="resources/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="resources/js/vendor/jquery-1.12.1.min.js"></script>
+    <script src="resources/ckeditor/ckeditor.js"></script>
+    <script src="resources/ckeditor/config.js"></script>   
+</head>
+<body class="login">
+    <div id="container">
+        <div class="container">
+            <div class="login_box">     
+                <form name="bsForm" method="post" action="" class="form-signin">
+                <!-- <div class="text-c">  
+                        <h1>Proejct Name</h1>
+                    </div>             -->
+                    <input type="hidden" name="loginCheck" id="loginCheck" value="loginFail" />
+                    <h2 class="form-signin-heading text-c">Project Name</h2>
+                        <div class="input_type">
+                            <label for="admin_id" class="sr-only">ID</label>
+                            <input type="text" name="admin_id" id="admin_id" class="form-control" title="로그인 아이디 입력 영역" placeholder="ID" autofocus>
+                            <label for="admin_password" class="sr-only">Password</label>
+                            <input type="password" name="admin_password" id="admin_password" title="로그인 패스워드 입력 영역" class="form-control mat-5" placeholder="Password">
+                        </div>
+                        <div class="check_type">
+                            <input type="checkbox" name="id_chk" id="id_chk" class="">
+                            <label for="id_chk">아이디 저장</label>
+                        </div>
+                        <div class="btn_type">
+                            <a class="btn btn-lg btn-primary btn-block" onclick="loginProc();">LOGIN</a>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="resources/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../resources/js/vendor/excanvas.min.js"></script> 
+    <script src="../resources/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../resources/js/vendor/jquery-1.12.1.min.js"></script> 
+    <script src="../resources/js/vendor/jquery.easing.1.3.js"></script>
+    <script src="../resources/js/vendor/bootstrap.min.js"></script>     
+    <script src="../resources/js/vendor/metisMenu.min.js"></script> 
+	<script src="../resources/js/dev.form.js"></script>
+    <script src="../resources/js/dev.util.js"></script>
+    <script src="../resources/js/dev.validate.js"></script>
+    <script src="../resources/js/dev.common.js"></script>   
+</body>
+</html>
+
