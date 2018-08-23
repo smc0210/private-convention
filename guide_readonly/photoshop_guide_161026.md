@@ -1,4 +1,4 @@
-# Bstones Photoshop Guide (for Publisher)
+# Wisdom Photoshop Guide (for Publisher)
 
 ## 목차
 

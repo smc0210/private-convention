@@ -1,4 +1,4 @@
-# Bstones Markup Coding Convention
+# Wisdom Markup Coding Convention
 
 ## 목차
 
@@ -271,7 +271,7 @@ class명을 부여하고 js단에서 컨트롤한다.
 		<div id="wrap">
 		</div>
 		<!-- 기타 스크립트는 문서 하단에 연결 -->
-		<script src="resource/js/bstones.js"></script>
+		<script src="resource/js/wisdom.js"></script>
 		<script src="resource/js/common.js"></script>
 		<script></script>
 	</body>
@@ -1043,7 +1043,7 @@ js 작성 규칙에 대해 설명한다.
 ### 1. 퍼블리싱 템플릿
 
 - 아래 경로에 있는 템플릿을 기준으로 퍼블리싱한다.
-svn://bstones.co.kr/bstones/trunk/default_html
+svn://wisdom.co.kr/wisdom/trunk/default_html
 <br>
 
 #### 1-1. 템플릿 구조
@@ -1107,7 +1107,7 @@ svn://bstones.co.kr/bstones/trunk/default_html
 
  > - 폼 유효성 검사, 자바스크립트 쿠키 및 세션, 폼 관련 유틸
 
- - `bstones.js`
+ - `wisdom.js`
 
  > - 비스톤스 자체 플러그인
  > - 레이어 팝업, 터치 슬라이드 기능 제공
@@ -1177,7 +1177,7 @@ svn://bstones.co.kr/bstones/trunk/default_html
 	<script src="resources/js/dev.form.js"></script>
 	<script src="resources/js/dev.util.js"></script>
 	<script src="resources/js/dev.validate.js"></script>
-	<script src="resources/js/bstones.js"></script>
+	<script src="resources/js/wisdom.js"></script>
 	<script src="resources/js/common.js"></script>
 	<!-- 페이지별 js는 하단에 -->
 	<script>
